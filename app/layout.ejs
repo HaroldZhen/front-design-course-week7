@@ -15,13 +15,203 @@
 
   <body>
     <header class="header">
-      這是 header
+      <nav
+        class="navbar topNavbar navbar-expand-lg navbar-light border-bottom border-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand p-0" href="./index.html">
+            <img
+              src="./assets/images/logo-fixie.svg"
+              alt="logo"
+              width="112"
+              height="48"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto fs-4 font-lato fw-bold">
+              <li class="nav-item">
+                <a class="nav-link me-10 p-0" aria-current="page" href="#"
+                  >Product</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-10 p-0" aria-current="page" href="#"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="d-flex">
+          <div class="w-50 hero__left">
+            <h1 class="mb-10">Single Speed, Single Life.</h1>
+            <p class="col-10 fs-4 mb-10">
+              More recently the “fixie” has become a popular alternative among
+              mainly urban cyclists, offering the advantage of simplicity
+              compared with the standard multi-geared bicycle.
+            </p>
+            <button
+              class="btn btn-light btn-hover-dark py-4 px-11 border border-1 border-dark font-lato rounded-0 fs-4 fw-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div class="w-50">
+            <div class="hero__bg bg-center-cover"></div>
+            <div class="d-flex border border-1 border-dark">
+              <a class="border-end border-dark p-mdx4 btn-hover-dark">
+                <span class="material-icons fs-3 lh-1">
+                  chevron_left
+                </span>
+              </a>
+              <a class="border-end border-dark p-mdx4 btn-hover-dark">
+                <span class="material-icons fs-3 lh-1">
+                  navigate_next
+                </span>
+              </a>
+              <div class="py-mdx3 px-10">
+                <h2 class="h3">Collection 001-xx</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
-
+    <section class="productOne">
+      <div class="d-flex position-relative">
+        <div class="w-50">
+          <div class="productOne__bg bg-center-cover"></div>
+        </div>
+        <div
+          class="w-50 bg-light productOne__right d-flex flex-column justify-content-between"
+        >
+          <p class="fs-6 fw-normal w-80">
+            A fixed gear drivetrain is more mechanically efficient than any
+            other bicycle drivetrain, with the most direct power transfer from
+            rider to the wheels. Thus, it requires less energy in any given gear
+            to move than a geared bike in the same gear.
+          </p>
+          <h2 class="fw-black text-end">
+            <div class="mb-5">One Gear,</div>
+            <div>Many Variations</div>
+          </h2>
+        </div>
+        <div class="readMore">
+          <a href="#" class="d-flex link-dark">
+            <div class="p-4 font-lato fw-bold bg-light fs-4 lh-1">
+              Read More
+            </div>
+            <div class="readMore__box bg-dark text-white">
+              <span class="material-icons">
+                arrow_forward
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="productTwo">
+      <div class="d-flex position-relative">
+        <div
+          class="w-50 bg-light productTwo__left d-flex flex-column justify-content-between"
+        >
+          <h2 class="fw-black">
+            <div class="mb-5">Stripped-Down</div>
+            <div>Performance</div>
+          </h2>
+          <p class="fs-6 fw-normal text-end w-80 ms-auto">
+            Without the added parts required for a fully geared drive
+            train—derailleurs, shifters, cables, cable carriers, multiple chain
+            rings, freewheel hub, brazed-on mounting lugs—a fixed gear bicycle
+            weighs less than its geared equivalent.
+          </p>
+        </div>
+        <div class="w-50">
+          <div class="productTwo__bg bg-center-cover"></div>
+        </div>
+        <div class="readMore">
+          <a href="#" class="d-flex link-dark">
+            <div class="p-4 font-lato fw-bold bg-dark text-white fs-4 lh-1">
+              Read More
+            </div>
+            <div class="readMore__box bg-light text-dark">
+              <span class="material-icons">
+                arrow_forward
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="slog">
+      <div class="container">
+        <h3 class="w-50 px-10 mx-auto mb-5 text-center fst-italic">
+          A collection built for regular commuters
+        </h3>
+        <p class="w-45 mx-auto text-center">
+          Riders unknown to each other commonly greet each other when on bikes.
+          As in many subcultures, this feeling of belonging is a key factor in
+          recruiting and retaining participants.
+        </p>
+      </div>
+    </section>
+    <section class="customer">
+      <div class="container h-100">
+        <div class="row h-100 align-items-end">
+          <div class="col-4 bg-white p-4 pe-2">
+            <div class="">
+              <p class="mb-4 fs-4 fw-black text-dark font-base fst-italic">
+                “I like to ride. Fixed gear. No brakes. Can’t stop. Don’t want
+                to, either.”
+              </p>
+              <p class="font-lato fst-italic">Premium Rush (2012)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- contents %>
-
-    <footer class="footer">
-      footer
+    <footer class="footer container bg-light">
+      <div class="">
+        <div class="d-flex justify-content-between align-items-center">
+          <ul class="nav font-lato fw-bold">
+            <li class="nav-item">
+              <a class="nav-link ps-0 pe-5" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0 pe-5" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0" href="#">Contact</a>
+            </li>
+          </ul>
+          <p class="font-roboto fs-7 text-dark-100" >© 2020 Fixie. All Rights Reserved.</p>
+          <a class="navbar-brand p-0" href="./index.html">
+            <img
+              src="./assets/images/logo-fixie.svg"
+              alt="logo"
+              width="112"
+              height="48"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

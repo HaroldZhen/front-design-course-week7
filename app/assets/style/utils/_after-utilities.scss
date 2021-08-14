@@ -1,6 +1,16 @@
 $utilities: map-merge(
   $utilities,
   (
+    "font-family": (
+      property: font-family,
+      class: font,
+      values: (
+        monospace: var(--#{$variable-prefix}font-monospace),
+        lato: $font-family-lato,
+        roboto: $font-family-roboto,
+        base: $font-family-sans-serif,
+      ),
+    ),
     "width": (
       property: width,
       responsive: true,
@@ -9,6 +19,7 @@ $utilities: map-merge(
         20: 20%,
         25: 25%,
         40: 40%,
+        45: 45%,
         50: 50%,
         60: 60%,
         75: 75%,
@@ -49,46 +60,12 @@ $utilities: map-merge(
         auto: auto,
       ),
     ),
-    "background-color-gray": (
-      property: background-color,
-      class: bg-gray,
-      values: $grays,
-    ),
-    "color-gray": (
-      property: color,
-      class: text-gray,
-      values: $grays,
-    ),
-    "border-color-gray": (
-      property: border-color,
-      class: border-gray,
-      values: $grays,
-    ),
     "font-size": (
       rfs: true,
       property: font-size,
       responsive: true,
       class: fs,
       values: $font-sizes,
-    ),
-    "line-height": (
-      property: line-height,
-      class: lh,
-      values: (
-        1: 1,
-        sm: $line-height-sm,
-        mdx1: $line-height-mdx1,
-        base: $line-height-base,
-        lg: $line-height-lg,
-      ),
-    ),
-    "font-family": (
-      property: font-family,
-      class: font,
-      values: (
-        monospace: var(--#{$variable-prefix}font-monospace),
-        roboto: $font-family-roboto,
-      ),
     ),
     "text-indent": (
       property: text-indent,
@@ -105,6 +82,7 @@ $utilities: map-merge(
         medium: $font-weight-medium,
         bold: $font-weight-bold,
         bolder: $font-weight-bolder,
+        black: $font-weight-black,
       ),
     ),
     "white-space": (
