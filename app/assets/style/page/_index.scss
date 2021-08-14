@@ -8,8 +8,8 @@
     height: 864px;
   }
   &__left {
-    padding-top: 216px;
-    padding-left: 255px;
+    padding-top: 13.5rem;
+    padding-left: 15.9375rem;
   }
 }
 .productOne {
@@ -19,10 +19,10 @@
     height: 960px;
   }
   &__right {
-    padding-top: 96px;
-    padding-left: 135px;
-    padding-right: 96px;
-    padding-bottom: 192px;
+    padding-top: 6rem;
+    padding-left: 8.4375rem;
+    padding-right: 6rem;
+    padding-bottom: 12rem;
   }
 }
 .productTwo {
@@ -32,10 +32,10 @@
     height: 960px;
   }
   &__left {
-    padding-top: 192px;
-    padding-left: 96px;
-    padding-right: 135px;
-    padding-bottom: 96px;
+    padding-top: 12rem;
+    padding-left: 6rem;
+    padding-right: 8.4375rem;
+    padding-bottom: 6rem;
   }
 }
 .readMore {
@@ -54,20 +54,20 @@
 }
 .slog,
 .productList {
-  padding: 96px 0;
+  padding: 6rem 0;
 }
 .customer {
   background-image: url("../images/img4.jpg");
   width: 100%;
   height: 640px;
+  padding-bottom: 4.8125rem;
   background-position: center 25%;
   background-size: cover;
-  padding-bottom: 77px;
   background-attachment: fixed;
 }
 .productList__img {
   height: 600px;
 }
-.footer{
-  padding: 24px 48px;
+.footer {
+  padding: 1.5rem 3rem;
 }
