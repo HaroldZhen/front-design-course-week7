@@ -1,74 +1,373 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
-category: page
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
+    <title>第七週 - 視差滾動</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
-<section class="productList">
-  <div class="container">
-    <div class="row">
-      <div class="col-4" data-aos="fade-up" data-aos-offset="300" data-aos-duration="800">
-        <div class="card border-0">
-          <img
-            src="./assets/images/img5.jpg"
-            class="card-img-top productList__img mb-5"
-            alt="img5"
-          />
-          <div class="card-body p-0">
-            <h5 class="card-title fs-4 mb-4">All who cycle are my friends</h5>
-            <h6 class="card-subtitle mb-2 text-muted mb-4 fw-normal font-lato">
-              2020.4.27
-            </h6>
-            <p class="card-text">
-              A rider from Stockholm interviewed for an article about the
-              phenomenon notes that riding a bike imparts a feeling of freedom
-              to the rider…
+  <body>
+    <header class="header">
+      <nav
+        class="navbar topNavbar navbar-expand-lg navbar-light border-bottom border-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand p-0" href="./index.html">
+            <img
+              src="./assets/images/logo-fixie.svg"
+              alt="logo"
+              width="112"
+              height="48"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            data-aos="fade-down"
+            data-aos-duration="300"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto fs-4 font-lato fw-bold">
+              <li class="nav-item">
+                <a class="nav-link me-10 p-0" aria-current="page" href="#"
+                  >Product</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-10 p-0" aria-current="page" href="#"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="d-flex">
+          <div
+            class="w-50 hero__left"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h1 class="mb-10">
+              Single Speed, Single Life.
+            </h1>
+            <p class="col-10 fs-4 mb-10">
+              More recently the “fixie” has become a popular alternative among
+              mainly urban cyclists, offering the advantage of simplicity
+              compared with the standard multi-geared bicycle.
             </p>
+            <button
+              class="btn btn-light btn-hover-dark py-4 px-11 border border-1 border-dark font-lato rounded-0 fs-4 fw-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div class="w-50">
+            <div
+              class="hero__bg bg-center-cover"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            ></div>
+            <div class="d-flex border border-1 border-dark">
+              <a class="border-end border-dark p-mdx4 btn-hover-dark">
+                <span class="material-icons fs-3 lh-1">
+                  chevron_left
+                </span>
+              </a>
+              <a class="border-end border-dark p-mdx4 btn-hover-dark">
+                <span class="material-icons fs-3 lh-1">
+                  navigate_next
+                </span>
+              </a>
+              <div class="py-mdx3 px-10">
+                <h2 class="h3">Collection 001-xx</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="productOne">
+      <div class="d-flex position-relative">
+        <div
+          class="w-50"
+          data-aos="fade-right"
+          data-aos-offset="250"
+          data-aos-duration="800"
+        >
+          <div class="productOne__bg bg-center-cover"></div>
+        </div>
+        <div
+          class="w-50 bg-light productOne__right d-flex flex-column justify-content-between"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-offset="250"
+        >
+          <p class="fs-6 fw-normal w-80">
+            A fixed gear drivetrain is more mechanically efficient than any
+            other bicycle drivetrain, with the most direct power transfer from
+            rider to the wheels. Thus, it requires less energy in any given gear
+            to move than a geared bike in the same gear.
+          </p>
+          <h2 class="fw-black text-end">
+            <div
+              class="mb-5 opacity-1"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              One Gear,
+            </div>
+            <div class="opacity-1" data-aos="fade-left" data-aos-duration="800">
+              Many Variations
+            </div>
+          </h2>
+        </div>
+        <div class="readMore">
+          <a href="#" class="d-flex link-dark">
+            <div class="p-4 font-lato fw-bold bg-light fs-4 lh-1">
+              Read More
+            </div>
+            <div class="readMore__box bg-dark text-white">
+              <span class="material-icons">
+                arrow_forward
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="productTwo">
+      <div class="d-flex position-relative">
+        <div
+          class="w-50 bg-light productTwo__left d-flex flex-column justify-content-between"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <h2 class="fw-black">
+            <div
+              class="mb-5 opacity-1"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
+              Stripped-Down
+            </div>
+            <div
+              class="opacity-1"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              Performance
+            </div>
+          </h2>
+          <p class="fs-6 fw-normal text-end w-80 ms-auto">
+            Without the added parts required for a fully geared drive
+            train—derailleurs, shifters, cables, cable carriers, multiple chain
+            rings, freewheel hub, brazed-on mounting lugs—a fixed gear bicycle
+            weighs less than its geared equivalent.
+          </p>
+        </div>
+        <div class="w-50" data-aos="fade-left" data-aos-duration="800">
+          <div class="productTwo__bg bg-center-cover"></div>
+        </div>
+        <div class="readMore">
+          <a href="#" class="d-flex link-dark">
+            <div class="p-4 font-lato fw-bold bg-dark text-white fs-4 lh-1">
+              Read More
+            </div>
+            <div class="readMore__box bg-light text-dark">
+              <span class="material-icons">
+                arrow_forward
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="slog">
+      <div class="container">
+        <h3
+          class="w-50 px-10 mx-auto mb-5 text-center fst-italic"
+          data-aos="fade-up"
+          data-aos-duration="400"
+        >
+          A collection built for regular commuters
+        </h3>
+        <p
+          class="w-45 mx-auto text-center"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          Riders unknown to each other commonly greet each other when on bikes.
+          As in many subcultures, this feeling of belonging is a key factor in
+          recruiting and retaining participants.
+        </p>
+      </div>
+    </section>
+    <section class="customer" data-aos="fade-up" data-aos-duration="800">
+      <div class="container h-100">
+        <div class="row h-100 align-items-end">
+          <div
+            class="col-4 bg-white p-4 pe-2"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <div class="">
+              <p class="mb-4 fs-4 fw-black text-dark font-base fst-italic">
+                “I like to ride. Fixed gear. No brakes. Can’t stop. Don’t want
+                to, either.”
+              </p>
+              <p class="font-lato fst-italic">Premium Rush (2012)</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1600">
-        <div class="card border-0">
-          <img
-            src="./assets/images/img6.jpg"
-            class="card-img-top productList__img mb-5"
-            alt="img6"
-          />
-          <div class="card-body p-0">
-            <h5 class="card-title fs-4 mb-4">Swedish riders and enthusiasts</h5>
-            <h6 class="card-subtitle mb-2 text-muted mb-4 fw-normal font-lato">
-              2020.3.11
-            </h6>
-            <p class="card-text">
-              There are also several bicycle clubs throughout Sweden with a
-              fixed-gear niche. Komet Club Rouler is a club based in Gothenburg,
-              annually arranging Svart Kat…
-            </p>
+    </section>
+    <section class="productList">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-4"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="800"
+          >
+            <div class="card border-0">
+              <img
+                src="./assets/images/img5.jpg"
+                class="card-img-top productList__img mb-5"
+                alt="img5"
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title fs-4 mb-4">
+                  All who cycle are my friends
+                </h5>
+                <h6
+                  class="card-subtitle mb-2 text-muted mb-4 fw-normal font-lato"
+                >
+                  2020.4.27
+                </h6>
+                <p class="card-text">
+                  A rider from Stockholm interviewed for an article about the
+                  phenomenon notes that riding a bike imparts a feeling of
+                  freedom to the rider…
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-4"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="1600"
+          >
+            <div class="card border-0">
+              <img
+                src="./assets/images/img6.jpg"
+                class="card-img-top productList__img mb-5"
+                alt="img6"
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title fs-4 mb-4">
+                  Swedish riders and enthusiasts
+                </h5>
+                <h6
+                  class="card-subtitle mb-2 text-muted mb-4 fw-normal font-lato"
+                >
+                  2020.3.11
+                </h6>
+                <p class="card-text">
+                  There are also several bicycle clubs throughout Sweden with a
+                  fixed-gear niche. Komet Club Rouler is a club based in
+                  Gothenburg, annually arranging Svart Kat…
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-4"
+            data-aos="fade-up"
+            data-aos-offset="500"
+            data-aos-duration="2400"
+          >
+            <div class="card border-0">
+              <img
+                src="./assets/images/img7.jpg"
+                class="card-img-top productList__img mb-5"
+                alt="img7"
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title fs-4 mb-4">
+                  The Australian fixie culture
+                </h5>
+                <h6
+                  class="card-subtitle mb-2 text-muted mb-4 fw-normal font-lato"
+                >
+                  2020.2.29
+                </h6>
+                <p class="card-text">
+                  Online stores in Australia ship partially-assembled bikes
+                  directly to consumers, considerably undercutting prices at
+                  typical brick and mortar stores…
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4" data-aos="fade-up" data-aos-offset="500" data-aos-duration="2400">
-        <div class="card border-0">
-          <img
-            src="./assets/images/img7.jpg"
-            class="card-img-top productList__img mb-5"
-            alt="img7"
-          />
-          <div class="card-body p-0">
-            <h5 class="card-title fs-4 mb-4">The Australian fixie culture</h5>
-            <h6 class="card-subtitle mb-2 text-muted mb-4 fw-normal font-lato">
-              2020.2.29
-            </h6>
-            <p class="card-text">
-              Online stores in Australia ship partially-assembled bikes directly
-              to consumers, considerably undercutting prices at typical brick
-              and mortar stores…
-            </p>
-          </div>
+    </section>
+
+    <footer class="footer container bg-light">
+      <div data-aos="fade-up" data-aos-duration="200" data-aos-offset="-50">
+        <div class="d-flex justify-content-between align-items-center">
+          <ul class="nav font-lato fw-bold">
+            <li class="nav-item">
+              <a class="nav-link ps-0 pe-5" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0 pe-5" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0" href="#">Contact</a>
+            </li>
+          </ul>
+          <p class="font-roboto fs-7 text-dark-100">
+            © 2020 Fixie. All Rights Reserved.
+          </p>
+          <a class="navbar-brand p-0" href="./index.html">
+            <img
+              src="./assets/images/logo-fixie.svg"
+              alt="logo"
+              width="112"
+              height="48"
+            />
+          </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
