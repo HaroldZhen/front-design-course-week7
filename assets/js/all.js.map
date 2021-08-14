@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.js"],"names":["console","log","AOS","init"],"mappings":";;AAAAA,OAAO,CAACC,GAAR,CAAY,QAAZ;AACAC,GAAG,CAACC,IAAJ","file":"all.js","sourcesContent":["console.log('Hello!');\nAOS.init();"]}
