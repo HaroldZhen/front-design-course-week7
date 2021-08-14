@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
     <title><%- title %></title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
       rel="stylesheet"
@@ -38,7 +40,12 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse"
+            data-aos="fade-down"
+            data-aos-duration="300"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav ms-auto fs-4 font-lato fw-bold">
               <li class="nav-item">
                 <a class="nav-link me-10 p-0" aria-current="page" href="#"
@@ -59,8 +66,14 @@
       </nav>
       <section class="hero">
         <div class="d-flex">
-          <div class="w-50 hero__left">
-            <h1 class="mb-10">Single Speed, Single Life.</h1>
+          <div
+            class="w-50 hero__left"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <h1 class="mb-10">
+              Single Speed, Single Life.
+            </h1>
             <p class="col-10 fs-4 mb-10">
               More recently the “fixie” has become a popular alternative among
               mainly urban cyclists, offering the advantage of simplicity
@@ -73,7 +86,11 @@
             </button>
           </div>
           <div class="w-50">
-            <div class="hero__bg bg-center-cover"></div>
+            <div
+              class="hero__bg bg-center-cover"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            ></div>
             <div class="d-flex border border-1 border-dark">
               <a class="border-end border-dark p-mdx4 btn-hover-dark">
                 <span class="material-icons fs-3 lh-1">
@@ -95,11 +112,19 @@
     </header>
     <section class="productOne">
       <div class="d-flex position-relative">
-        <div class="w-50">
+        <div
+          class="w-50"
+          data-aos="fade-right"
+          data-aos-offset="250"
+          data-aos-duration="800"
+        >
           <div class="productOne__bg bg-center-cover"></div>
         </div>
         <div
           class="w-50 bg-light productOne__right d-flex flex-column justify-content-between"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-offset="250"
         >
           <p class="fs-6 fw-normal w-80">
             A fixed gear drivetrain is more mechanically efficient than any
@@ -108,8 +133,16 @@
             to move than a geared bike in the same gear.
           </p>
           <h2 class="fw-black text-end">
-            <div class="mb-5">One Gear,</div>
-            <div>Many Variations</div>
+            <div
+              class="mb-5 opacity-1"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              One Gear,
+            </div>
+            <div class="opacity-1" data-aos="fade-left" data-aos-duration="800">
+              Many Variations
+            </div>
           </h2>
         </div>
         <div class="readMore">
@@ -127,13 +160,19 @@
       </div>
     </section>
     <section class="productTwo">
-      <div class="d-flex position-relative">
+      <div
+        class="d-flex position-relative"
+        data-aos="fade-right"
+        data-aos-duration="800"
+      >
         <div
           class="w-50 bg-light productTwo__left d-flex flex-column justify-content-between"
+          data-aos="fade-left"
+          data-aos-duration="800"
         >
           <h2 class="fw-black">
-            <div class="mb-5">Stripped-Down</div>
-            <div>Performance</div>
+            <div class="mb-5 opacity-1" data-aos="fade-left" data-aos-duration="800">Stripped-Down</div>
+            <div class="opacity-1" data-aos="fade-right" data-aos-duration="800">Performance</div>
           </h2>
           <p class="fs-6 fw-normal text-end w-80 ms-auto">
             Without the added parts required for a fully geared drive
@@ -161,20 +200,32 @@
     </section>
     <section class="slog">
       <div class="container">
-        <h3 class="w-50 px-10 mx-auto mb-5 text-center fst-italic">
+        <h3
+          class="w-50 px-10 mx-auto mb-5 text-center fst-italic"
+          data-aos="fade-up"
+          data-aos-duration="400"
+        >
           A collection built for regular commuters
         </h3>
-        <p class="w-45 mx-auto text-center">
+        <p
+          class="w-45 mx-auto text-center"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           Riders unknown to each other commonly greet each other when on bikes.
           As in many subcultures, this feeling of belonging is a key factor in
           recruiting and retaining participants.
         </p>
       </div>
     </section>
-    <section class="customer">
+    <section class="customer" data-aos="fade-up" data-aos-duration="800">
       <div class="container h-100">
         <div class="row h-100 align-items-end">
-          <div class="col-4 bg-white p-4 pe-2">
+          <div
+            class="col-4 bg-white p-4 pe-2"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             <div class="">
               <p class="mb-4 fs-4 fw-black text-dark font-base fst-italic">
                 “I like to ride. Fixed gear. No brakes. Can’t stop. Don’t want
@@ -188,7 +239,7 @@
     </section>
     <%- contents %>
     <footer class="footer container bg-light">
-      <div class="">
+      <div data-aos="fade-up" data-aos-duration="200" data-aos-offset="-50">
         <div class="d-flex justify-content-between align-items-center">
           <ul class="nav font-lato fw-bold">
             <li class="nav-item">
@@ -201,7 +252,9 @@
               <a class="nav-link ps-0" href="#">Contact</a>
             </li>
           </ul>
-          <p class="font-roboto fs-7 text-dark-100" >© 2020 Fixie. All Rights Reserved.</p>
+          <p class="font-roboto fs-7 text-dark-100">
+            © 2020 Fixie. All Rights Reserved.
+          </p>
           <a class="navbar-brand p-0" href="./index.html">
             <img
               src="./assets/images/logo-fixie.svg"
